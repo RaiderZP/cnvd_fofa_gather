@@ -13,6 +13,6 @@
                3.python proxypool.py server
                
                
-启动完代理池后就可以将想要搜集的公司名称导出，放到gs.txt进行搜索爬取，输出结果在company.txt
+启动完代理池后就可以将想要搜集的公司名称导出，放到gs.txt进行搜索爬取，直接使用python3启动该脚本，输出结果在company.txt
 
 python cnvd_fofa_gather
