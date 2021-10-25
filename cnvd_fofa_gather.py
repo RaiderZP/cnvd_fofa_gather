@@ -2,7 +2,7 @@ import re
 import base64
 import requests
 from urllib.parse import quote
-
+import time
 
 requests.packages.urllib3.disable_warnings()
 
@@ -48,7 +48,8 @@ def getHtml(urls):
     except Exception as u:
         print('lo_err:', u)
         return None
-
+    # 延时，防止请求过快，如果还是太快出现请求错误，可以再调高一些
+    time.sleep(1)
 
 
 def fofa_search(kjgs, gs):
