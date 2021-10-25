@@ -5,6 +5,7 @@
 
 代理池项目地址：https://github.com/jhao104/proxy_pool
 代理池简单使用：
+               
                1.启动redis
 
                2.python proxypool.py schedule
