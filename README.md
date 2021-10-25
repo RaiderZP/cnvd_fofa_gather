@@ -4,8 +4,12 @@
 该项目使用了免费代理池项目作为支撑，因为fofa短时间搜索不同关键词可能将导致延时错误，多次出现错误后fofa可能将会封锁你的IP
 代理池项目地址：https://github.com/jhao104/proxy_pool
 代理池简单使用：1.启动redis
+
                2.python proxypool.py schedule
+               
                3.python proxypool.py server
                
+               
 启动完代理池后就可以将想要搜集的公司名称导出，放到gs.txt进行搜索爬取，输出结果在company.txt
+
 python cnvd_fofa_gather
