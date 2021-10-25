@@ -35,7 +35,7 @@ def getHtml(urls):
             # 使用代理访问
             return html
         except Exception as u:
-            print('proxy_err:', u)
+            print('proxy_err:', retry_count)
             retry_count -= 1
     # 删除代理池中代理
     delete_proxy(proxy)
